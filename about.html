@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="images/favi.ico" type="images/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>ScoopEase</title>
+</head>
+<body>
+    
+        <nav class = "mobile-nav">
+            <div id="menu-links">
+                <a href="index.html">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="flavors.html">FLAVORS</a>
+                <a href="prices.html">PRICES</a>
+            </div>
+            <a class = "menu-icon" onclick="hamburger()">
+            <div>&#9776;</div>
+            </a>
+        </nav>
+
+        <header>
+        <nav class = "navbar">
+            <a href="index.html" class = "logo">
+                <img src="images/pops.png" alt="Ice cream logo">
+            </a>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="flavors.html">FLAVORS</a></li>
+                <li><a href="prices.html">PRICES</a></li>
+                
+            </ul>
+        </nav>
+        
+    </header>
+    <a class = "about-desc">
+        <img src = "images/about.jpg" alt = "ScoopEase About">
+    </a>
+        <h2 class="hours">Hours of Operation</h2>
+        <div class="sched">
+            
+        </div>
+        <table>
+            <tr>
+                <th>Day</th>
+                <th>Time</th>
+            </tr>
+
+            <tr>
+                <td>Monday to Tuesday</td>
+                <td>8:00 am - 7:00 pm</td>
+            </tr>
+
+            <tr>
+                <td>Wednesday</td>
+                <td>10:00 am - 5:00 pm</td>
+            </tr>
+
+            <tr>
+                <td>Thursday - Friday</td>
+                <td>8:00 am - 7:00 pm</td>
+            </tr>
+
+            <tr>
+                <td>Saturday</td>
+                <td>10:00 am - 3:00 pm</td>
+            </tr>
+        </table>
+
+        <div class="cont-about">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Reach out to us for any inquiries, feedback, or just to say hello.</p>
+        </div>
+
+        <div class="form" id="link">
+            <form class="form-grid">
+                <fieldset>
+                    <legend>Customer information</legend>
+                    <label for = "fName">First Name:</label> 
+                    <input type ="text" id = "fName" name = "fName" required > <br>
+                    
+                    <label for = "lName">Last Name:</label> 
+                    <input type ="text" id = "lName" name = "lName" required > <br>
+
+                    <label for = "email">Email:</label> 
+                    <input type ="email" id = "email" name = "email" required > <br>
+
+                    <label for = "phone">Phone:</label>
+                    <input type ="tel" id = "phone" name = "phone" required > <br>
+                </fieldset>
+            
+                <fieldset>
+                    <label for = "reference">How did you find us?</label>
+                    <select name = "reference" id = "reference">
+                        <option value="ad">Advertisement</option>
+                        <option value="google">Google</option>
+                        <option value="social">Social Media</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for = "questions">Questions?</label>
+                    <textarea id = "questions" name = "questions" row = "10" cols = "35"></textarea>
+                </fieldset>
+
+                <input type = "submit" id = "submit" value="submit" class = "btn">
+            </form>    
+        </div>
+
+        <div class="map-cont">
+            <h2>Our Location</h2>
+            <p>We are located at:</p>
+            <p>SM CLARK, PAMPANGA</p>
+        </div>
+        <div class="map">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3850.8374199259356!2d120.57753847505843!3d15.167270785389041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f27ed3afbe8d%3A0x6ae26c077df1397!2sSM%20City%20Clark!5e0!3m2!1sen!2sph!4v1700394044577!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <footer>
+            <div class="social">
+                <a href=" https://www.facebook.com/profile.php?id=100083179497799&sk=photos&viewas=100000686899395" target="_blank">
+                    <img src = "images/facebook-logo.png" alt = "Facebook logo">
+                </a>
+                <a href="https://twitter.com/home" target="_blank">
+                    <img src = "images/twitter-logo.png" alt = "Twitter logo">
+                </a>
+                <div class = "copyright">
+                    <p><a href="mailto:ScoopEase@Contact.gmail.com">ScoopEase@Contact.gmail.com</a></p>
+                </div>
+                <p>&copy; 2023 ScoopEase Ice Cream. All rights reserved.</p>
+    
+            </div>
+        </footer>
+
+        <script src = "scripts/script.js"></script>
+</body>
+</html>

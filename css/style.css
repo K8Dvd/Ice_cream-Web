@@ -1,0 +1,611 @@
+/* color 
+#F9F9F9  WHITE
+#FFE0AC  YELLOW
+#FFACB7  PINK
+#6886C5  BLUE*/
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+} 
+
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+body {
+    background-color: #F9F9F9;
+    color:#6886C5;
+    font-family: 'Rubik', sans-serif;
+    background-size: cover;
+}
+
+.logo img {
+    margin-top: 5px;
+    margin-left: 15px;
+    height: 175px;
+    cursor: pointer;
+}
+
+.about-desc img {
+    height: 100%;
+    width: 100%;
+}
+
+video{
+    margin: 0 auto 4%;
+    max-width: 100%;
+    display: block;
+}
+
+.banner img, .descript img {
+    width: 100%;
+    height: auto auto auto auto;
+    padding: 0;
+   
+} 
+
+.banner:hover img{
+    opacity: 0.7;
+    transition: 0.3s
+}
+
+.tagline {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    
+    text-align: center;
+    font-weight: bold;
+}
+/* ========Hamburger=================== */
+.mobile-nav a {
+    color: #6886C5;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+    
+}
+
+
+.mobile-nav a.menu-icon {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+
+/* ========================== */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #6886C5;
+    align-items: center; 
+    height: 80px;
+    position: sticky;
+    top:0;
+
+      /*to center it top  */
+    
+    /* nilagay yung nav/ choices sa right center */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar li {
+    margin-right: 15px;
+}
+
+/* for nav options */
+.navbar li a{
+    display: inline-block;
+    color:#F9F9F9;   /*font color*/
+    text-decoration: none; /* remove underline */
+    list-style: none;
+    font-size: 22px;
+    margin: 10px;
+}
+
+.navbar li a:hover{
+    color: #FFE0AC;
+    font-weight: bold;
+}
+
+.banner:hover img{
+    opacity: 0.9;
+}
+
+
+/* ++++++++++++++++++++++++++ */
+/* MASONRY GRID */
+.name {
+    font-size: 13px;
+}
+
+.star {
+    color: #FFE0AC;
+}
+
+.feedback {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 50px;
+    color: #6886C5;
+}
+
+.gridbody {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    min-height: 100vh;
+    background: #F9F9F9;
+}
+
+.profile {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    padding: 0;
+}
+
+.profile .box {
+    background: #F9F9F9;
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    color: #6886C5; /*p feedback*/
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.profile .box:hover {
+    background: #6886C5;
+    color: #F9F9F9;
+}
+
+.profile .box img {
+    position: relative;
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.profile .box:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.profile .box:nth-child(2) {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.profile .box:nth-child(3) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.profile .box:nth-child(4) {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.profile .box:nth-child(5) {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.profile .box:nth-child(6) {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+
+.mobile-nav {
+    display: none; 
+}
+
+
+/* +++++++++++++FLAVORS+++++++++++++++++++ */
+
+.card{
+    
+    width: 420px;
+    margin: 10px; 
+    max-width: 100%;
+    width: 100%;
+    overflow: hidden;  /*Para hindi lumagpas sa border*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #6886C5;
+    position:relative;
+    box-shadow: 2px 2px 5px rgba(136, 136, 136, 0.9);
+    /* height: 350px;  */
+    border-radius: 20px;
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+.card-container {
+    display: flex;
+    margin-left: 2%;   /*Spacing nya sa side */
+    flex-direction: row; 
+    align-items: center; 
+    text-align: center;
+}
+
+.card-img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    
+}
+
+.card-body{
+    width: 100%;
+    height: 100%; 
+    top:0;
+    top: -100%;/* MApupunta sa right yung text */
+    position: absolute;
+    background: #132b5f99;
+    backdrop-filter: blur(5px);
+    color: #F9F9F9;
+    display: flex;
+    flex-direction: column; /* alignment of the card and btn */
+    justify-content: center;
+    /* height: 350px;  */
+    transition: 2s;
+    /* nya */
+    
+    
+}
+
+.card:hover .card-body{
+   top: 0;
+
+}
+
+.card-title{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.card-sub-title{
+    
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-info{
+    font-size: 16px;
+    line-height: 30px;
+    margin: 40px 0;
+    font-weight: 400;
+}
+
+.card-btn{
+    border-radius: 5px;
+    color:#6886C5;
+    background: #F9F9F9;
+    padding: 10px;
+    border: none;
+    font-weight: 300;
+    margin-left: 20px;
+    display: inline-block;
+    width:115px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.card-btn:hover{
+    color:#F9F9F9;
+    background: #6886C5;
+}
+
+
+/* Gallery*/
+.Title-flavor{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.gallery-cont{
+    text-align: center;
+}
+
+.gallery{
+    display: inline-block;
+    border:3px solid#6886C5;
+    margin: 6px;
+    box-shadow: 2px 2px 5px rgba(136, 136, 136, 0.9);
+    width: 400px; /*size  nung mga frames ng fla */
+    margin-left: 50px;
+    border-radius: 10px;
+
+    
+    
+}
+
+.gallery .flavor-desc{
+    padding: 10px;
+    text-align: center;
+
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+
+/* Tablet Styles */
+@media only screen and (max-width: 768px) {
+
+    .card-container {
+        margin: 5%;
+        flex-direction: column; 
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px; 
+    }
+
+    .gallery {
+        width: 80%; 
+        margin: 10px; 
+    }
+
+    .mobile-nav {
+        display: none; 
+    }
+
+}
+
+
+/*==================about======================== */
+table{
+    
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 85%;
+    text-align: center;
+}
+
+th{
+    background-color: #2a5fd0;
+    color:#F9F9F9;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+th, td {
+    border:#6886C5;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+caption {
+    font-size: 2em;
+    font-weight: bold;
+    padding: 1%;
+    text-align: center;
+}
+
+tr:nth-child(odd) {
+    background-color: #6886C5;
+    color:#F9F9F9
+}
+
+tr:hover{
+    background-color: #FFACB7;
+    color:#F9F9F9;
+}
+.hours{
+    text-align: center;
+}
+
+/*==================CONTACT======================= */
+.cont-about{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.form .form-grid{
+    
+    /* height: 100px; */
+    background-color: #6886C5;
+    box-shadow: 0 0 20px 0 gray;
+    top: 50%;
+    left: 10%;
+    transform: translate();
+    color: #F9F9F9;
+    width: 350px;
+    margin: 30px auto;
+    padding: 10px;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 5px;
+
+    
+} 
+
+.btn {
+    grid-column: 1 / span 3;
+    color: #6886C5;
+    padding: 15px;
+    background-color: #F9F9F9;
+    text-align: center;
+    border-radius: 10px;
+    line-height: 7px;
+}
+
+input{
+    padding: 6px;
+    margin: 3px;
+    border-radius: 5px;
+}
+.map {
+    border: #6886C5;
+    padding: 20px;
+    background-color: #6886C5;
+    
+    max-width: 700px;
+    margin: 0 auto; 
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 gray;
+}
+
+.map-cont {
+    color: #6886C5;
+    text-align: center;
+    line-height: 33px;
+    font-size: 25px;
+}
+
+/* =============PRICES=========================== */
+.h2-prices{
+    text-align: center;
+    font-size: 30px;
+    margin: 27px
+}
+
+.events img {
+    width: 100%;
+    height: auto auto auto auto;
+    padding: 0;
+   
+} 
+
+
+/*==================FOOTER======================== */
+
+footer{
+    text-align: center;
+    height: 20px;
+    font-size: 15px;
+    margin: 40px;
+}
+
+.copyright a{
+    padding: 10px;
+    text-decoration: none;
+    margin:2px;
+    color:#F9F9F9;
+    background-color: #6886C5;
+    line-height: 50px;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 480px) {
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .navbar li {
+        margin-bottom: 15px;
+    }
+
+    .navbar {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar.active ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar.active li {
+        margin-bottom: 15px;
+    }
+
+    /* Mobile Navigation (Hamburger) */
+    .mobile-nav {
+        display: block;
+        cursor: pointer;
+    }
+
+    .mobile-nav a.menu-icon {
+        font-size: 24px;
+        text-decoration: none;
+        color: #6886C5;
+    }
+
+    .navbar.active ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar.active li {
+        margin-bottom: 15px;
+    }
+
+    .profile {
+        display: block; 
+        margin: 10px; 
+    }
+    .profile .box {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .profile .box img {
+        max-width: 100%; 
+    }
+
+    .map {
+        
+        padding: 10px; 
+        background-color: #6886C5;
+        max-width: 100%; 
+        margin: 10px; 
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+        overflow: hidden;
+        margin-right: 0;
+
+    }
+
+    .navbar {
+        display: none;
+     }
+
+}
